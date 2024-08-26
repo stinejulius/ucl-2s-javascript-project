@@ -120,3 +120,21 @@ td {
     margin-right: 16px;
 }
 
+
+/* Path back to 'Button-Down Shirts' */
+
+#arrow-backwards-path {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#arrow-backwards-path>p {
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
