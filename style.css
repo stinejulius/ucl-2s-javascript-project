@@ -138,3 +138,11 @@ td {
     font-weight: 400;
     line-height: normal;
 }
+
+
+/* Header, review and price */
+
+#underline-review {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
