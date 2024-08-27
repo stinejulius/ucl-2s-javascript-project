@@ -382,3 +382,82 @@ body {
     font-weight: 700;
     border: none;
 }
+
+
+/* footer styling */
+
+footer {
+    font-family: 'Nunito', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3-footer{
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+/* get help section footer */
+.get-help-container {
+    width: 100%;
+    padding: 60px 16px;
+}
+
+.get-help-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.get-help-button {
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 48px;
+    padding: 8px 25px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* information section footer */
+.info-container {
+width: 100%;
+padding: 60px 16px;
+}
+
+.info-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.info-box1 li,
+.info-box2 li {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.info-box1 ul li a,
+.info-box2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 300;
+}
+
+.info-box1 ul,
+.info-box2 ul {
+    list-style-type: none;
+}
+
+.footer-copy {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
