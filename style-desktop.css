@@ -1,0 +1,25 @@
+@media screen and (min-width: 991px) {
+    #product-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #product-section > div {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        max-width: 1200px;
+    }
+
+    #product-visual-and-nav {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 60%;
+    }
+
+    #product-information {
+        padding-top: 46px;
+    }
+}
