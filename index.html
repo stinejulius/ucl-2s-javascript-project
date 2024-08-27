@@ -43,16 +43,17 @@
 
     <section id="product-section">
         <!-- Product photo section -->
-        <div>
-            <img id="product-photo" src="assets/images/pine-needle-green-1.jpg" alt="Pine Needle Green Fjord Flannel Shirt">
+        <div id="product-photos">
+            <img id="product-photo" src="assets/images/pine-needle-green-1.jpg"
+                alt="Pine Needle Green Fjord Flannel Shirt">
 
-            <div id="product-photo-arrow-description">
+            <div id="product-photo-floating">
                 <div id="product-photo-arrows">
                     <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
                     <img src="assets/illustrations/right-arrow-circle.svg" alt="Circle with arrow pointing right">
                 </div>
 
-                <div id="product-photo-description-lineup">
+                <div id="product-photo-descriptions">
                     <div class="product-photo-description">
                         <p> Cascade: Pine Needle Green </p>
                     </div>
@@ -71,7 +72,7 @@
 
 
         <!-- Headline, review and price -->
-         <div id="headline-review-price">
+        <div id="headline-review-price">
             <h1 id="product-headline"> Women's Fjord Flannel Shirt </h1>
             <div id="star-review">
                 <div id="stars">
@@ -90,15 +91,22 @@
 
 
         <!-- Color picker -->
-        <div id="color-dots">
-          <div class="dots active-dot" id="dot-cascane-pine-needle-green"></div>
-          <div class="dots active-dot" id="dot-shelter-brown"></div>
-          <div class="dots active-dot" id="dot-tidepool-blue"></div>
-          <div class="dots active-dot" id="dot-oxide-red"></div>
-          <div class="dots active-dot" id="dot-ww-pine-needle-green"></div>
+        <div id="color-picker">
+            <div id="color-picker-text">
+                <p id="color-picker-bold-text"> Color </p>
+                <p id="color-picker-regular-text"> Cascade: Pine Needle Green </p>
+            </div>
+            <div id="color-dots">
+                <div class="dot active" id="dot-cascane-pine-needle-green"></div>
+                <div class="dot" id="dot-shelter-brown"></div>
+                <div class="dot" id="dot-tidepool-blue"></div>
+                <div class="dot" id="dot-oxide-red"></div>
+                <div class="dot" id="dot-ww-pine-needle-green"></div>
+            </div>
         </div>
-    
-        
+
+
+
         <!-- Sizing picker -->
         <div id="sizing-picker">
             <div id="sizing-text">
@@ -112,7 +120,7 @@
                 <div class="size-button">
                     <p class="sizing-button-text"> S </p>
                 </div>
-                <div class="size-button">
+                <div class="size-button active">
                     <p class="sizing-button-text"> M </p>
                 </div>
                 <div class="size-button">
@@ -125,12 +133,12 @@
         </div>
 
 
-        
+
 
         <!-- Favorite button & Add-to-Bag button -->
-         <div id="favorite-bag-buttons">
-            <button id="heart-button"><img src="assets/illustrations/favorite.svg" alt=""></button>
-            <button id="add-to-bag-button">Add to Bag</button>
+        <div id="favorite-bag-buttons">
+            <button id="heart-button"><img src="assets/illustrations/favorite.svg" alt="Heart icon"></button>
+            <button id="add-to-bag-button"> Add to Bag </button>
         </div>
 
     </section>
