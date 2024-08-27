@@ -129,6 +129,9 @@ td {
     gap: 6px;
     align-items: center;
     padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #arrow-backwards-path>p {
@@ -140,9 +143,50 @@ td {
 }
 
 
-/* Header, review and price */
+/* Headline, review and price */
+
+#headline-review-price {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#product-headline {
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+#star-review {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#stars {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 
 #underline-review {
     text-decoration: underline;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 2.5px;
+
+    /* style for text */
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#pricetag {
+    /* Style for text */
+    color: #000;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
