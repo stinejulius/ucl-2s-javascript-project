@@ -190,3 +190,125 @@ td {
     font-weight: 900;
     line-height: normal;
 }
+
+
+
+/*Color picker*/
+
+#color-dots {
+    display: flex;
+    padding-left: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.dots{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+#dot-cascane-pine-needle-green {
+    background-color: #212121;
+}
+
+#dot-shelter-brown{
+    background-color: #7B5427;
+}
+
+#dot-tidepool-blue {
+    background-color: #8B9096;
+}
+
+#dot-oxide-red {
+    background-color: #650517;
+}
+
+#dot-ww-pine-needle-green {
+    background-color: #434237;
+}
+
+
+/* Sizing picker */
+
+#sizing-picker {
+    padding: 0 16px 0 16px;
+}
+
+#sizing-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#size-text {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#size-guide-text {
+    font-family: Nunito;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+#sizing-buttons-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.size-button {
+    display: flex;
+    width: 104px;
+    height: 56px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: #F5F5F5;
+}
+
+.sizing-button-text {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
+/* Favorite button & Add-to-Bag button */
+#favorite-bag-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#heart-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background: #000;
+    border: none;
+}
+
+#add-to-bag-button {
+    display: flex;
+    justify-content: center;
+    width: 63%;
+    height: 56px;
+    padding-bottom: 10px;
+    border-radius: 48px;
+    background: #FA4616;
+
+    /* Style for text */
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
