@@ -90,6 +90,22 @@ body {
 
 
 /* Product section */
+#product-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#product-visual-and-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#product-information {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #product-photos {
     position: relative;
 }
