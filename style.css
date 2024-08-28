@@ -61,6 +61,7 @@ body {
 .bot-header-icons {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
 }
 
@@ -141,6 +142,27 @@ body {
     width: 32px;
 }
 
+/* cart container */
+#cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* cart number symbol */
+#cart-number {
+    position: absolute;
+    background-color: #FA4616;
+    color: #FFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+
+}
 
 
 /* ----------PRODUCT SECTION - IMAGES & NAV---------- */
@@ -544,13 +566,102 @@ footer {
 
 #footer-copy {
     padding-bottom: 30px;
-    background-color: black;
-
-    display: flex;
-    justify-content: center;
 }
 
-#footer-copy>p {
+/* add to bag pop up styling */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.popup-content h2 {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#popup-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popup-product-image {
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+}
+
+#popup-product-text {
+    text-align: center;
+}
+
+#popup-product-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#popup-product-color, #popup-product-price {
+    font-size: 16px;
+}
+
+#popup-product-price {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#checkout {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+/* cart count style */
+#cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cart-count {
+
+    top: -10px;
+    right: -10px;
+    background-color: #FA4616;
     color: white;
-    font-size: 14px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
