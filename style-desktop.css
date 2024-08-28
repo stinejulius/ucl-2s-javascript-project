@@ -18,21 +18,22 @@
 
 
 
-    /* ----------PRODUCT SECTION---------- */
+    /* ----------PRODUCT SECTION - IMAGES & NAV---------- */
 
     #product-section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        max-width: 1200px;
     }
 
     #product-section > div {
         display: flex;
         flex-direction: row;
         gap: 40px;
+        width: calc(100% - 40px);
         max-width: 1200px;
+        margin: 0 auto;
     }
 
     #product-visual-and-nav {
@@ -41,8 +42,75 @@
         width: 60%;
     }
 
+    #product-photos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #product-photos > figure {
+        flex: 1 1 34%;
+        display: block;
+    }
+
+    .product-photo-arrows {
+        display: none;
+    }
+
+    .product-photo-description:last-child {
+        display: none;
+    }
+
     #product-information {
         padding-top: 46px;
+    }
+
+    /* ----------HEADLINE, REVIEW & PRICE---------- */
+    
+    #product-headline {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #underline-review {
+        font-size: 14px;
+    }
+
+    #pricetag {
+        font-size: 25px;
+    }
+
+    /* ----------COLOR PICKER---------- */
+
+    #color-picker {
+        padding: 25px 16px 0 16px;
+    }
+
+    #color-picker-bold-text {
+        font-size: 16px;
+    }
+
+    #color-picker-regular-text {
+        font-size: 16px;
+    }
+
+    /* ----------SIZING PICKER---------- */
+    
+    #sizing-picker {
+        padding: 25px 16px 25px 16px;
+    }
+    
+    #size-text {
+        font-size: 16px;
+    }
+
+    #size-guide-text {
+        font-size: 16px;
+    }
+
+    .size-button {
+        /* 7,5px da der er 30px gap i det hele som skal fordeles på de 4 elementer på rækken */
+        width: calc(25% - 7.5px);
     }
 
     /* ----------FOOTER---------- */
