@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <script src="add-to-bag.js"></script>
 
 </head>
 
@@ -37,7 +38,10 @@
 
             <div class="bot-header-icons">
                 <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag">
+                <div id="cart-container">
+                    <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    <div id="cart-count">0</div>
+                </div>
             </div>
         </div>
 
@@ -57,8 +61,12 @@
                     <img src="assets/illustrations/search.svg" alt="Search icon">
                     <img src="assets/illustrations/person.svg" alt="Person icon">
                     <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                    <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    <div id="cart-container">
+                        <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                        <div id="cart-number">0</div>
+                    </div>
                     <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                
                 </div>
             </div>
         </div>
@@ -224,6 +232,23 @@
         <p class="footer-copy">© 2024 Patagonia, Inc. All Rights Reserved.</p>
 
     </footer>
+
+<!-- popup add to bag-->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <div id="closePopup" class="close">&times;</div>
+        <h2>Added to Bag!</h2>
+        <div id="popup-product-info">
+            <img id="popup-product-image" src="" alt="Product Image">
+            <div id="popup-product-text">
+                <h3 id="popup-product-name"></h3>
+                <p id="popup-product-color"></p>
+                <p id="popup-product-price"></p>
+            </div>
+        </div>
+        <button id="checkout">Checkout</button>
+    </div>
+</div>
 
 </body>
 
