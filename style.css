@@ -38,7 +38,6 @@ body {
 
 #top-header {
     background-color: black;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,12 +46,21 @@ body {
     width: 100%;
 }
 
-#top-header>p {
+#ShippingText{
     color: #FFF;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+#fade-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
 
