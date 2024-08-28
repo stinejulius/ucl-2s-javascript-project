@@ -34,7 +34,7 @@ body {
     font-style: normal;
 }
 
-/* TOP HEADER */
+/* ----------TOP HEADER---------- */
 
 #top-header {
     background-color: black;
@@ -56,7 +56,7 @@ body {
 }
 
 
-/* BOT HEADER MOBILE */
+/* ----------BOT HEADER MOBILE---------- */
 
 .bot-header-icons {
     display: flex;
@@ -88,7 +88,7 @@ body {
     justify-content: space-between;
 }
 
-/* BOT HEADER DESKTOP */
+/* ----------BOT HEADER DESKTOP---------- */
 
 #bot-header-inner {
     width: calc(100% - 40px);
@@ -143,7 +143,7 @@ body {
 
 
 
-/* Product section */
+/* ----------PRODUCT SECTION - IMAGES & NAV---------- */
 #product-section {
     display: flex;
     flex-direction: column;
@@ -212,7 +212,7 @@ body {
     font-weight: 700;
 }
 
-/* Path back to 'Button-Down Shirts' */
+/* ----------PATH BACK TO 'BUTTON-DOWN SHIRTS'---------- */
 
 #arrow-backwards-path {
     display: flex;
@@ -233,7 +233,7 @@ body {
 }
 
 
-/* Headline, review and price */
+/* ----------HEADLINE, REVIEW & PRICE---------- */
 
 #headline-review-price {
     display: flex;
@@ -280,7 +280,7 @@ body {
 
 
 
-/*Color picker*/
+/*----------COLOR PICKER----------*/
 
 #color-picker {
     display: flex;
@@ -359,7 +359,7 @@ body {
 }
 
 
-/* Sizing picker */
+/* ----------SIZING PICKER---------- */
 
 #sizing-picker {
     padding: 15px 16px 15px 16px;
@@ -415,7 +415,7 @@ body {
 
 
 
-/* Favorite button & Add-to-Bag button */
+/* ----------FAVORITE BUTTON & ADD-TO-BAG BUTTON---------- */
 #favorite-bag-buttons {
     display: flex;
     flex-direction: row;
@@ -454,7 +454,7 @@ body {
 }
 
 
-/* footer styling */
+/* ----------FOOTER---------- */
 
 footer {
     background-color: #000;
@@ -479,7 +479,7 @@ footer {
     padding: 30px 0;
 }
 
-/* get help section footer */
+/* ----------FOOTER - GET HELP SECTION---------- */
 #get-help-container {
     width: 100%;
     padding: 60px 0;
@@ -503,7 +503,7 @@ footer {
     cursor: pointer;
 }
 
-/* information section footer */
+/* ----------FOOTER - INFORMATION SECTION---------- */
 #info-container {
     width: 100%;
     padding: 60px 0;
