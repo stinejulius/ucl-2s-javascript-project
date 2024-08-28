@@ -1,0 +1,40 @@
+#search-icon {
+    border: none;
+    background-color: white;
+}
+
+#person-icon {
+    border: none;
+    background-color: white;
+}
+
+#heart-icon {
+    border: none;
+    background-color: white;
+}
+
+#shopping-bag {
+    border: none;
+    background-color: white;
+}
+
+#menu-icon {
+    border: none;
+    background-color: white;
+}
+
+#dropdown-minibag {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* Change opacity of icon when hovering */
+#shopping-bag:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}

@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
+    <script src="dropdown-shoppingbag.js"></script>
+    <link rel="stylesheet" href="dropdown-shoppingbag.css">
 </head>
 
 <body>
@@ -54,11 +56,25 @@
                     <img src="assets/illustrations/patagonia.svg" alt="Patagonia logo">
                 </div>
                 <div id="bot-header-icons-desktop">
-                    <img src="assets/illustrations/search.svg" alt="Search icon">
-                    <img src="assets/illustrations/person.svg" alt="Person icon">
-                    <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                    <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
-                    <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    <button id="search-icon">
+                        <img src="assets/illustrations/search.svg" alt="Search icon">
+                    </button>
+                    <button id="person-icon">
+                        <img src="assets/illustrations/person.svg" alt="Person icon">
+                    </button>
+                    <button id="heart-icon">
+                        <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
+                    </button>
+                    <button id="shopping-bag">
+                        <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    </button>
+                    <button id="menu-icon">
+                        <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    </button>
+                </div>
+                <!-- Dropdown Shopping Bag -->
+                <div id="dropdown-minibag">
+                    <p>Your shopping bag is empty.</p>
                 </div>
             </div>
         </div>
