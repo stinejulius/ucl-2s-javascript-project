@@ -267,6 +267,9 @@ body {
     gap: 10px;
 }
 
+#stars > img {
+    width: 14px;
+}
 
 #underline-review {
     text-decoration: underline;
