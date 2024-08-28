@@ -90,15 +90,15 @@ body {
 
 /* BOT HEADER DESKTOP */
 
-#bot-header-center-desktop {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+#bot-header-inner {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 #bot-header-desktop {
     display: none;
-    padding: 20px 80px;
+    padding: 20px 0;
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
@@ -126,7 +126,7 @@ body {
 
 }
 
-#patagonia-logo-desktop > img {
+#patagonia-logo-desktop>img {
     width: 136px;
     min-width: 120px;
 }
@@ -137,7 +137,7 @@ body {
     gap: 20px;
 }
 
-#bot-header-icons-desktop > img {
+#bot-header-icons-desktop>img {
     width: 32px;
 }
 
@@ -457,14 +457,21 @@ body {
 /* footer styling */
 
 footer {
-    font-family: 'Nunito', sans-serif;
     background-color: #000;
+}
+
+#footer-inner {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#footer-elements {
+    font-family: 'Nunito', sans-serif;
     color: #fff;
-    margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .h3-footer {
@@ -473,12 +480,12 @@ footer {
 }
 
 /* get help section footer */
-.get-help-container {
+#get-help-container {
     width: 100%;
-    padding: 60px 16px;
+    padding: 60px 0;
 }
 
-.get-help-buttons-container {
+#get-help-buttons-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -497,37 +504,45 @@ footer {
 }
 
 /* information section footer */
-.info-container {
+#info-container {
     width: 100%;
-    padding: 60px 16px;
+    padding: 60px 0;
 }
 
-.info-sections {
+#info-sections {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.info-box1 li,
-.info-box2 li {
+#info-box1 li,
+#info-box2 li {
     padding-bottom: 20px;
     padding-right: 20px;
 }
 
-.info-box1 ul li a,
-.info-box2 ul li a {
+#info-box1 ul li a,
+#info-box2 ul li a {
     color: #fff;
     text-decoration: none;
     list-style: none;
     font-weight: 300;
 }
 
-.info-box1 ul,
-.info-box2 ul {
+#info-box1 ul,
+#info-box2 ul {
     list-style-type: none;
 }
 
-.footer-copy {
-    font-size: 14px;
+#footer-copy {
     padding-bottom: 30px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+}
+
+#footer-copy>p {
+    color: white;
+    font-size: 14px;
 }

@@ -1,6 +1,6 @@
 @media screen and (min-width: 991px) {
     
-    /* Header */
+    /* ----------HEADER---------- */
 
     /* Removes mobile bottom header */
     #bot-header-mobile {
@@ -8,22 +8,24 @@
     }
 
     /* Displays desktop bottom header */
+    #bot-header-center-desktop {
+        justify-content: space-between;
+    }
+    
     #bot-header-desktop {
         display: flex;
     }
 
-    #bot-header {
-        max-width: 1280px;
-    }
 
 
-    /* Product section */
+    /* ----------PRODUCT SECTION---------- */
 
     #product-section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        max-width: 1200px;
     }
 
     #product-section > div {
@@ -41,5 +43,28 @@
 
     #product-information {
         padding-top: 46px;
+    }
+
+    /* ----------FOOTER---------- */
+
+    #footer-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-elements {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1280px;
+    }
+
+    #get-help-container {
+        padding: 0;
+        width: 280px;
+    }
+
+    #info-container {
+        padding: 0;
+        width: 496px;
     }
 }
