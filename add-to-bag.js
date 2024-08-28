@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("popup-product-name").textContent = "Women's Fjord Flannel Shirt";
         document.getElementById("popup-product-color").textContent = "Cascade: Pine Needle Green";
         document.getElementById("popup-product-price").textContent = "€ 130";
-        document.getElementById("popup-product-image").src = "assets/images/pine-needle-green-1.jpg";
+        document.getElementById("popup-product-image").src = "assets/images/cascade-pine-needle-green-1.jpg";
 
         document.getElementById("closePopup").addEventListener("click", function () {
             popup.style.display = "none";
