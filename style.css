@@ -34,7 +34,7 @@ body {
     font-style: normal;
 }
 
-/* TOP HEADER */
+/* ----------TOP HEADER---------- */
 
 #top-header {
     background-color: black;
@@ -56,7 +56,7 @@ body {
 }
 
 
-/* BOT HEADER MOBILE */
+/* ----------BOT HEADER MOBILE---------- */
 
 .bot-header-icons {
     display: flex;
@@ -89,17 +89,17 @@ body {
     justify-content: space-between;
 }
 
-/* BOT HEADER DESKTOP */
+/* ----------BOT HEADER DESKTOP---------- */
 
-#bot-header-center-desktop {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+#bot-header-inner {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 #bot-header-desktop {
     display: none;
-    padding: 20px 80px;
+    padding: 20px 0;
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
@@ -127,7 +127,7 @@ body {
 
 }
 
-#patagonia-logo-desktop > img {
+#patagonia-logo-desktop>img {
     width: 136px;
     min-width: 120px;
 }
@@ -138,7 +138,7 @@ body {
     gap: 20px;
 }
 
-#bot-header-icons-desktop > img {
+#bot-header-icons-desktop>img {
     width: 32px;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 
-/* Product section */
+/* ----------PRODUCT SECTION - IMAGES & NAV---------- */
 #product-section {
     display: flex;
     flex-direction: column;
@@ -183,21 +183,32 @@ body {
 }
 
 #product-photos {
-    position: relative;
+    
 }
 
-#product-photo {
+#product-photos > figure {
+    position: relative;
+    display: none;
+    margin: 0;
+}
+
+#product-photos > figure:first-child {
+    width: 100%;
+    display: block;
+}
+
+.product-photo {
     width: 100%;
 }
 
-#product-photo-floating {
+.product-photo-floating {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
 }
 
-#product-photo-arrows {
+.product-photo-arrows {
     position: absolute;
     top: 50%;
     left: 0;
@@ -209,7 +220,7 @@ body {
     padding-right: 16px;
 }
 
-#product-photo-descriptions {
+.product-photo-descriptions {
     position: absolute;
     bottom: 24px;
     left: 0;
@@ -234,7 +245,7 @@ body {
     font-weight: 700;
 }
 
-/* Path back to 'Button-Down Shirts' */
+/* ----------PATH BACK TO 'BUTTON-DOWN SHIRTS'---------- */
 
 #arrow-backwards-path {
     display: flex;
@@ -255,7 +266,7 @@ body {
 }
 
 
-/* Headline, review and price */
+/* ----------HEADLINE, REVIEW & PRICE---------- */
 
 #headline-review-price {
     display: flex;
@@ -293,16 +304,13 @@ body {
 
 #pricetag {
     /* Style for text */
-    color: #000;
     font-size: 18px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
 
 
-/*Color picker*/
+/*----------COLOR PICKER----------*/
 
 #color-picker {
     display: flex;
@@ -381,7 +389,7 @@ body {
 }
 
 
-/* Sizing picker */
+/* ----------SIZING PICKER---------- */
 
 #sizing-picker {
     padding: 15px 16px 15px 16px;
@@ -437,7 +445,7 @@ body {
 
 
 
-/* Favorite button & Add-to-Bag button */
+/* ----------FAVORITE BUTTON & ADD-TO-BAG BUTTON---------- */
 #favorite-bag-buttons {
     display: flex;
     flex-direction: row;
@@ -476,17 +484,24 @@ body {
 }
 
 
-/* footer styling */
+/* ----------FOOTER---------- */
 
 footer {
-    font-family: 'Nunito', sans-serif;
     background-color: #000;
+}
+
+#footer-inner {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#footer-elements {
+    font-family: 'Nunito', sans-serif;
     color: #fff;
-    margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .h3-footer {
@@ -494,13 +509,13 @@ footer {
     padding: 30px 0;
 }
 
-/* get help section footer */
-.get-help-container {
+/* ----------FOOTER - GET HELP SECTION---------- */
+#get-help-container {
     width: 100%;
-    padding: 60px 16px;
+    padding: 60px 0;
 }
 
-.get-help-buttons-container {
+#get-help-buttons-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -518,39 +533,38 @@ footer {
     cursor: pointer;
 }
 
-/* information section footer */
-.info-container {
+/* ----------FOOTER - INFORMATION SECTION---------- */
+#info-container {
     width: 100%;
-    padding: 60px 16px;
+    padding: 60px 0;
 }
 
-.info-sections {
+#info-sections {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.info-box1 li,
-.info-box2 li {
+#info-box1 li,
+#info-box2 li {
     padding-bottom: 20px;
     padding-right: 20px;
 }
 
-.info-box1 ul li a,
-.info-box2 ul li a {
+#info-box1 ul li a,
+#info-box2 ul li a {
     color: #fff;
     text-decoration: none;
     list-style: none;
     font-weight: 300;
 }
 
-.info-box1 ul,
-.info-box2 ul {
+#info-box1 ul,
+#info-box2 ul {
     list-style-type: none;
 }
 
-.footer-copy {
-    font-size: 14px;
+#footer-copy {
     padding-bottom: 30px;
 }
 
