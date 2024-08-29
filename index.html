@@ -39,7 +39,9 @@
             <div class="bot-header-icons">
                 <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
                 <div id="cart-container">
-                    <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    <button id="shoppingbag-button" class="icon-button">
+                        <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    </button>
                     <div id="cart-count">0</div>
                 </div>
             </div>
@@ -67,15 +69,19 @@
                     <button id="heart-icon">
                         <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
                     </button>
-                    <button id="shoppingbag-button" class="icon-button">
-                        <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
-                    </button>
+                    <div id="cart-container">
+                        <button id="shoppingbag-button" class="icon-button">
+                            <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                        </button>
+                        <div id="cart-count">0</div>
+                    </div>
                     <button id="menu-icon">
                         <img src="assets/illustrations/menu.svg" alt="Menu icon">
                     </button>
                 </div>
+
                 <!-- Dropdown Shopping Bag -->
-                <div id="shoppingbag-menu" class="shopping-bag-content show">
+                <div id="shoppingbag-menu" class="shopping-bag-content">
                   <p>Your shopping bag is empty.</p>
                 </div>
             </div>
