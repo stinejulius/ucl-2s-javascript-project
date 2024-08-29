@@ -14,10 +14,10 @@
         rel="stylesheet">
     <script src="add-to-bag.js"></script>
 
+    <script src="dropdown-shoppingbag.js"></script>
 </head>
 
 <body>
-
     <header>
         <!-- Top header -->
         <div id="top-header">
@@ -58,19 +58,28 @@
                     <img src="assets/illustrations/patagonia.svg" alt="Patagonia logo">
                 </div>
                 <div id="bot-header-icons-desktop">
-                    <img src="assets/illustrations/search.svg" alt="Search icon">
-                    <img src="assets/illustrations/person.svg" alt="Person icon">
-                    <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                    <div id="cart-container">
+                    <button id="search-icon">
+                        <img src="assets/illustrations/search.svg" alt="Search icon">
+                    </button>
+                    <button id="person-icon">
+                        <img src="assets/illustrations/person.svg" alt="Person icon">
+                    </button>
+                    <button id="heart-icon">
+                        <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
+                    </button>
+                    <button id="shoppingbagButton" class="icon-button">
                         <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
-                        <div id="cart-count">0</div>
-                    </div>
-                    <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    </button>
+                    <button id="menu-icon">
+                        <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    </button>
+                </div>
+                <!-- Dropdown Shopping Bag -->
+                <div id="shoppingbagMenu" class="shopping-bag-content">
+                  <p>Your shopping bag is empty.</p>
                 </div>
             </div>
         </div>
-
-
     </header>
 
     <main id="product-section">
