@@ -1,4 +1,7 @@
 // Stine Julius
+
+alert ("This website is made for educational purposes");
+
 /**
  * GLOBAL VARIABLES
  */
