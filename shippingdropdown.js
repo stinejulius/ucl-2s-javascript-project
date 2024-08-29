@@ -29,14 +29,20 @@ function SwitchTextAndIMG() {
 /*Den skifter tekst og SVG hver 4.sekund */
 setInterval(SwitchTextAndIMG, 4000);
 
+/*Drop-down shipping menu */
+
+/*Event tilføjet på shippingknap, så der sker noget ved et klik */
 document.getElementById('shippingBtn').addEventListener('click', function() {
+
+    /*Viser hvilket indhold der skal skjules, når menuen ikke er foldet ud */
     var dropdown = document.getElementById('shipping-content');
     var icon = document.getElementById('svg-icon');
 
     dropdown.classList.toggle('show');
-    icon.classList.toggle('rotate');
 });
 
+
+/*Betyder at du kan klikke enten udenfor vinduet eller på knappen for at lukke drop down */
 window.onclick = function(event) {
     if (!event.target.closest('#fade-container')) {
         var dropdown = document.getElementById('shipping-content');
@@ -44,7 +50,6 @@ window.onclick = function(event) {
 
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
-            icon.classList.remove('rotate');
         }
     }
 }

@@ -64,12 +64,14 @@ body {
     align-items: center;
 }
 
-
 #fade-container {
+    /*Den del med skriften der fader ind og ud*/
     position: relative;
     transition: opacity 1s ease-in-out;
     opacity: 1;
 }
+
+/*Alt det der omhandler dropdown menuen for shipping*/
 
 #shipping-content {
     display: none;
@@ -84,12 +86,13 @@ body {
     width: 100%;
 }
 
+
 #shipping-content-text {
     color: white;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .underlined-text {
@@ -100,7 +103,7 @@ body {
 #signUp-btn {
     all: unset;
     position: absolute;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     background-color: white;
     padding-left: 15px;
@@ -109,8 +112,6 @@ body {
     padding-bottom: 5px;
     border-radius: 20px;
     margin-top: 10px;
-    
-
 }
 
 #shipping-content.show {
