@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    let cartCountElements = document.querySelectorAll("#cart-count", "#cart-number"); 
+    let cartCountElements = document.querySelectorAll("#cart-count"); 
     let addToBagButton = document.getElementById("add-to-bag-button"); 
     let sizeButtons = document.querySelectorAll(".size-button");
     let selectedSize = "M";
