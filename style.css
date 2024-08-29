@@ -623,10 +623,12 @@ footer {
 #cart-container {
     position: relative;
     display: inline-block;
+    margin-right: 16px;
 }
 
 #cart-count {
-    top: -10px;
+    position: absolute;
+    top: -10px; 
     right: -10px;
     background-color: #FA4616;
     color: white;
@@ -639,3 +641,4 @@ footer {
     font-size: 12px;
     font-weight: bold;
 }
+
