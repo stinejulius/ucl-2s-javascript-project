@@ -15,10 +15,10 @@
     <script src="add-to-bag.js"></script>
     <script src="color-picker.js" defer></script>
 
+    <script src="dropdown-shoppingbag.js"></script>
 </head>
 
 <body>
-
     <header>
         <!-- Top header -->
         <div id="top-header">
@@ -59,19 +59,28 @@
                     <img src="assets/illustrations/patagonia.svg" alt="Patagonia logo">
                 </div>
                 <div id="bot-header-icons-desktop">
-                    <img src="assets/illustrations/search.svg" alt="Search icon">
-                    <img src="assets/illustrations/person.svg" alt="Person icon">
-                    <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                    <div id="cart-container">
+                    <button id="search-icon">
+                        <img src="assets/illustrations/search.svg" alt="Search icon">
+                    </button>
+                    <button id="person-icon">
+                        <img src="assets/illustrations/person.svg" alt="Person icon">
+                    </button>
+                    <button id="heart-icon">
+                        <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
+                    </button>
+                    <button id="shoppingbag-button" class="icon-button">
                         <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
-                        <div id="cart-number">0</div>
-                    </div>
-                    <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    </button>
+                    <button id="menu-icon">
+                        <img src="assets/illustrations/menu.svg" alt="Menu icon">
+                    </button>
+                </div>
+                <!-- Dropdown Shopping Bag -->
+                <div id="shoppingbag-menu" class="shopping-bag-content show">
+                  <p>Your shopping bag is empty.</p>
                 </div>
             </div>
         </div>
-
-
     </header>
 
     <main id="product-section">
@@ -311,18 +320,20 @@
 <div id="popup" class="popup">
     <div class="popup-content">
         <div id="closePopup" class="close">&times;</div>
-        <h2>Added to Bag!</h2>
+        <h2>Added to Bag </h2>
         <div id="popup-product-info">
             <img id="popup-product-image" src="" alt="Product Image">
             <div id="popup-product-text">
                 <h3 id="popup-product-name"></h3>
                 <p id="popup-product-color"></p>
+                <p id="popup-product-size"></p>
                 <p id="popup-product-price"></p>
             </div>
         </div>
         <button id="checkout">Checkout</button>
     </div>
 </div>
+
 
 </body>
 

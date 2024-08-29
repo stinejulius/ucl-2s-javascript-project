@@ -136,3 +136,53 @@
         width: 496px;
     }
 }
+
+/* styling for buttons and dropdown shopping bag */
+#search-icon {
+    border: none;
+    background-color: transparent;
+}
+
+#person-icon {
+    border: none;
+    background-color: transparent;
+}
+
+#heart-icon {
+    border: none;
+    background-color: transparent;
+}
+
+#shoppingbag-button { /* shopping-bag icon */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-icon {
+    border: none;
+    background-color: transparent;
+}
+
+#shoppingbag-menu {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* Changed opacity of icon when hovering */
+#shoppingbag-button:hover {
+    opacity: 0.5;
+}
+
+.show {
+    display: block;
+}
