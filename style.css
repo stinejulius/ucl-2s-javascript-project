@@ -38,7 +38,6 @@ body {
 
 #top-header {
     background-color: black;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,14 +46,85 @@ body {
     width: 100%;
 }
 
-#top-header>p {
+#shippingText{
+    background-color: #000;
     color: #FFF;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: normal;   
 }
 
+#shippingBtn{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fade-container {
+    /*Den del med skriften der fader ind og ud*/
+    position: relative;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+/*Alt det der omhandler dropdown menuen for shipping*/
+
+#shipping-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding: 15px;
+    z-index: 1;
+    width: 100%;
+}
+
+#shipping-content-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    font-size: 13px;
+}
+
+.underlined-text {
+    color: white;
+    text-decoration: underline;
+}
+
+#signUp-btn {
+    all: unset;
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#shipping-content.show {
+    display: block;
+}
+
+#closeBtn {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 1001;
+}
 
 /* ----------BOT HEADER MOBILE---------- */
 
