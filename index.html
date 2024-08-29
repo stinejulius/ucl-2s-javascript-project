@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <script src="add-to-bag.js"></script>
 
     <script src="dropdown-shoppingbag.js"></script>
 </head>
@@ -37,7 +38,10 @@
 
             <div class="bot-header-icons">
                 <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
-                <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag">
+                <div id="cart-container">
+                    <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
+                    <div id="cart-count">0</div>
+                </div>
             </div>
         </div>
 
@@ -72,37 +76,105 @@
                 </div>
                 <!-- Dropdown Shopping Bag -->
                 <div id="shoppingbagMenu" class="shopping-bag-content">
-                    <p>Your shopping bag is empty.</p>
+                  <p>Your shopping bag is empty.</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="product-section">
+    <main id="product-section">
         <div>
             <!-- Product Images & Nav -->
             <div id="product-visual-and-nav">
                 <!-- Product photo section -->
                 <div id="product-photos">
-                    <img id="product-photo" src="assets/images/pine-needle-green-1.jpg"
+                    <figure>
+                        <img class="product-photo" src="assets/images/pine-needle-green-1.jpg"
                         alt="Pine Needle Green Fjord Flannel Shirt">
 
-                    <div id="product-photo-floating">
-                        <div id="product-photo-arrows">
-                            <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
-                            <img src="assets/illustrations/right-arrow-circle.svg"
-                                alt="Circle with arrow pointing right">
-                        </div>
+                        <div class="product-photo-floating">
+                            <div class="product-photo-arrows">
+                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/right-arrow-circle.svg"
+                                    alt="Circle with arrow pointing right">
+                            </div>
 
-                        <div id="product-photo-descriptions">
-                            <div class="product-photo-description">
-                                <p> Cascade: Pine Needle Green </p>
-                            </div>
-                            <div class="product-photo-description">
-                                <p> 1/4 </p>
+                            <div class="product-photo-descriptions">
+                                <div class="product-photo-description">
+                                    <p> Cascade: Pine Needle Green </p>
+                                </div>
+                                <div class="product-photo-description">
+                                    <p> 1/4 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </figure>
+
+                    <figure>
+                        <img class="product-photo" src="assets/images/pine-needle-green-2.jpg"
+                        alt="Pine Needle Green Fjord Flannel Shirt">
+
+                        <div class="product-photo-floating">
+                            <div class="product-photo-arrows">
+                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/right-arrow-circle.svg"
+                                    alt="Circle with arrow pointing right">
+                            </div>
+
+                            <div class="product-photo-descriptions">
+                                <div class="product-photo-description">
+                                    <p> Model is 176cm wearing a size small </p>
+                                </div>
+                                <div class="product-photo-description">
+                                    <p> 1/4 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <img class="product-photo" src="assets/images/pine-needle-green-3.jpg"
+                        alt="Pine Needle Green Fjord Flannel Shirt">
+
+                        <div class="product-photo-floating">
+                            <div class="product-photo-arrows">
+                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/right-arrow-circle.svg"
+                                    alt="Circle with arrow pointing right">
+                            </div>
+
+                            <div class="product-photo-descriptions">
+                                <div class="product-photo-description">
+                                    <p> Model is 176cm wearing a size small </p>
+                                </div>
+                                <div class="product-photo-description">
+                                    <p> 1/4 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <img class="product-photo" src="assets/images/pine-needle-green-4.jpg"
+                        alt="Pine Needle Green Fjord Flannel Shirt">
+
+                        <div class="product-photo-floating">
+                            <div class="product-photo-arrows">
+                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/right-arrow-circle.svg"
+                                    alt="Circle with arrow pointing right">
+                            </div>
+
+                            <div class="product-photo-descriptions">
+                                <div class="product-photo-description">
+                                    <p> Model is 176cm wearing a size small </p>
+                                </div>
+                                <div class="product-photo-description">
+                                    <p> 1/4 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
                 </div>
 
                 <!-- Path back to 'Button-Down Shirts' -->
@@ -185,7 +257,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div id="footer-inner">
@@ -242,6 +314,25 @@
 
 
     </footer>
+
+<!-- popup add to bag-->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <div id="closePopup" class="close">&times;</div>
+        <h2>Added to Bag </h2>
+        <div id="popup-product-info">
+            <img id="popup-product-image" src="" alt="Product Image">
+            <div id="popup-product-text">
+                <h3 id="popup-product-name"></h3>
+                <p id="popup-product-color"></p>
+                <p id="popup-product-size"></p>
+                <p id="popup-product-price"></p>
+            </div>
+        </div>
+        <button id="checkout">Checkout</button>
+    </div>
+</div>
+
 
 </body>
 

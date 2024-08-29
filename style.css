@@ -34,7 +34,7 @@ body {
     font-style: normal;
 }
 
-/* TOP HEADER */
+/* ----------TOP HEADER---------- */
 
 #top-header {
     background-color: black;
@@ -56,11 +56,12 @@ body {
 }
 
 
-/* BOT HEADER MOBILE */
+/* ----------BOT HEADER MOBILE---------- */
 
 .bot-header-icons {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
 }
 
@@ -88,7 +89,7 @@ body {
     justify-content: space-between;
 }
 
-/* BOT HEADER DESKTOP */
+/* ----------BOT HEADER DESKTOP---------- */
 
 #bot-header-inner {
     width: calc(100% - 40px);
@@ -142,8 +143,7 @@ body {
 }
 
 
-
-/* Product section */
+/* ----------PRODUCT SECTION - IMAGES & NAV---------- */
 #product-section {
     display: flex;
     flex-direction: column;
@@ -160,22 +160,30 @@ body {
     flex-direction: column;
 }
 
-#product-photos {
+
+#product-photos > figure {
     position: relative;
+    display: none;
+    margin: 0;
 }
 
-#product-photo {
+#product-photos > figure:first-child {
+    width: 100%;
+    display: block;
+}
+
+.product-photo {
     width: 100%;
 }
 
-#product-photo-floating {
+.product-photo-floating {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
 }
 
-#product-photo-arrows {
+.product-photo-arrows {
     position: absolute;
     top: 50%;
     left: 0;
@@ -187,7 +195,7 @@ body {
     padding-right: 16px;
 }
 
-#product-photo-descriptions {
+.product-photo-descriptions {
     position: absolute;
     bottom: 24px;
     left: 0;
@@ -212,7 +220,7 @@ body {
     font-weight: 700;
 }
 
-/* Path back to 'Button-Down Shirts' */
+/* ----------PATH BACK TO 'BUTTON-DOWN SHIRTS'---------- */
 
 #arrow-backwards-path {
     display: flex;
@@ -233,7 +241,7 @@ body {
 }
 
 
-/* Headline, review and price */
+/* ----------HEADLINE, REVIEW & PRICE---------- */
 
 #headline-review-price {
     display: flex;
@@ -259,6 +267,9 @@ body {
     gap: 10px;
 }
 
+#stars > img {
+    width: 14px;
+}
 
 #underline-review {
     text-decoration: underline;
@@ -271,16 +282,13 @@ body {
 
 #pricetag {
     /* Style for text */
-    color: #000;
     font-size: 18px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
 
 
-/*Color picker*/
+/*----------COLOR PICKER----------*/
 
 #color-picker {
     display: flex;
@@ -359,7 +367,7 @@ body {
 }
 
 
-/* Sizing picker */
+/* ----------SIZING PICKER---------- */
 
 #sizing-picker {
     padding: 15px 16px 15px 16px;
@@ -415,7 +423,7 @@ body {
 
 
 
-/* Favorite button & Add-to-Bag button */
+/* ----------FAVORITE BUTTON & ADD-TO-BAG BUTTON---------- */
 #favorite-bag-buttons {
     display: flex;
     flex-direction: row;
@@ -454,7 +462,7 @@ body {
 }
 
 
-/* footer styling */
+/* ----------FOOTER---------- */
 
 footer {
     background-color: #000;
@@ -479,7 +487,7 @@ footer {
     padding: 30px 0;
 }
 
-/* get help section footer */
+/* ----------FOOTER - GET HELP SECTION---------- */
 #get-help-container {
     width: 100%;
     padding: 60px 0;
@@ -503,7 +511,7 @@ footer {
     cursor: pointer;
 }
 
-/* information section footer */
+/* ----------FOOTER - INFORMATION SECTION---------- */
 #info-container {
     width: 100%;
     padding: 60px 0;
@@ -536,13 +544,104 @@ footer {
 
 #footer-copy {
     padding-bottom: 30px;
-    background-color: black;
+}
 
+/* pop up styling */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.popup-content h2 {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#popup-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popup-product-image {
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+}
+
+#popup-product-text {
+    text-align: center;
+}
+
+#popup-product-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#popup-product-color {
+    font-size: 16px;
+}
+
+#popup-product-price {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#checkout {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+/* cart count styling  */
+
+#cart-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px; 
+    right: -10px;
+    background-color: #FA4616;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-#footer-copy>p {
-    color: white;
-    font-size: 14px;
-}
