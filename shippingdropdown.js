@@ -8,7 +8,7 @@ let text1 = "Shipping Information"
 let text2 = "Free Delivery On Orders Over €100"
 
 /* Referere til de to elementer i HTML-siden jeg har lavet */
-let textElement = document.getElementById("ShippingText");
+let textElement = document.getElementById("shippingText");
 let fadeContainer = document.getElementById("fade-container")
 
 let showText1 = true;
@@ -28,3 +28,23 @@ function SwitchTextAndIMG() {
 
 /*Den skifter tekst og SVG hver 4.sekund */
 setInterval(SwitchTextAndIMG, 4000);
+
+document.getElementById('shippingBtn').addEventListener('click', function() {
+    var dropdown = document.getElementById('shipping-content');
+    var icon = document.getElementById('svg-icon');
+
+    dropdown.classList.toggle('show');
+    icon.classList.toggle('rotate');
+});
+
+window.onclick = function(event) {
+    if (!event.target.closest('#fade-container')) {
+        var dropdown = document.getElementById('shipping-content');
+        var icon = document.getElementById('svg-icon');
+
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+            icon.classList.remove('rotate');
+        }
+    }
+}
