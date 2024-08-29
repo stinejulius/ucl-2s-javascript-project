@@ -1,26 +1,43 @@
 /* minibag dropdown view in javascript */
 
-document.addEventListener('DOMContentLoaded', () => {
-    const shoppingbagButton = document.getElementById('shoppingbag-button');
-    const shoppingbagMenu = document.getElementById('shoppingbag-menu');
+// Get the shoppingbag buttons
+const shoppingbagButtonMobile = document.getElementById(
+    "shoppingbag-button-mobile"
+);
+const shoppingbagButtonDesktop = document.getElementById(
+    "shoppingbag-button-desktop"
+);
 
-    // Toggle dropdown menu when button is clicked
-    shoppingbagButton.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent event from bubbling up
-        shoppingbagMenu.classList.toggle('show'); // Toggle the 'show' class
+// Get the shoppingbag menus
+const shoppingbagMenuMobile = document.getElementById(
+    "shoppingbag-menu-mobile"
+);
+const shoppingbagMenuDesktop = document.getElementById(
+    "shoppingbag-menu-desktop"
+);
 
-        console.log('Shoppingbag button clicked!');
+// Toggle dropdown menu when button is clicked
+shoppingbagButtonMobile.addEventListener("click", onClickShoppingBagButton);
+shoppingbagButtonDesktop.addEventListener("click", onClickShoppingBagButton);
 
-        shoppingbagMenu.classList.toggle('show');
+// Function to toggle dropdown menu
+function onClickShoppingBagButton(event) {
+    event.stopPropagation(); // Stop event bubbling
 
-        console.log('Show class toggled:', shoppingbagMenu.classList.contains('show'));
-    });
+    shoppingbagMenuMobile.classList.toggle("show");
+    shoppingbagMenuDesktop.classList.toggle("show");
+}
 
-    
-    // Close dropdown if clicked outside
-    document.addEventListener('click', (event) => {
-        if (!shoppingbagButton.contains(event.target) && !shoppingbagMenu.contains(event.target)) {
-            shoppingbagMenu.classList.remove('show');
-        }
-    });
+// Setup event listener to close dropdown menu when clicked outside
+document.addEventListener("click", function (event) {
+    // If the clicked element is not the shoppingbag button or the shoppingbag menu or any of its children
+    if (
+        !shoppingbagButtonMobile.contains(event.target) &&
+        !shoppingbagButtonDesktop.contains(event.target) &&
+        !shoppingbagMenuMobile.contains(event.target) &&
+        !shoppingbagMenuDesktop.contains(event.target)
+    ) {
+        shoppingbagMenuMobile.classList.remove("show");
+        shoppingbagMenuDesktop.classList.remove("show");
+    }
 });

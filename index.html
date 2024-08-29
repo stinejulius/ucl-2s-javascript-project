@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-desktop.css">
-    <script src="shippingdropdown.js" defer ></script>
+    <script src="shippingdropdown.js" defer></script>
     <title>Women's Fjord Flanned Shirt | Patagonia EU</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <script src="add-to-bag.js"></script>
+    <script src="color-picker.js" defer></script>
 
-    <script src="dropdown-shoppingbag.js"></script>
+    <script src="dropdown-shoppingbag.js" defer></script>
 </head>
 
 <body>
@@ -27,41 +28,45 @@
                     <p id="shippingText">Shipping Information</p>
                     <img id="svg-icon" src="assets/illustrations/keyboard_arrow_down.svg" alt="arrow pointing down">
                 </button>
-            </div>  
-                 <!--Indholdet i dropdownvinduet-->
-                <div id="shipping-content">
-                    <button id="closeBtn"><img src="assets/illustrations/close-icon.svg" alt="closing icon"></button>
-                    <div id="shipping-content-text"> 
-                         <h4>Shipping Information</h4>
-                         <br>
-                        <p>We do our best to process and ship orders within 1-2 business days(Monday-Friday, excluding holidays). <br>
-                            We kindly ask that you choose standard shipping where possible <br> to reduce our environmental impact. <br>
-                            if you have any questions about your order, you can reach out <br> to our Cosumer Service teams and we will be happy to help.
-                        </p>
-                        <br>
-                        <p class="underlined-text">More Details</p>
-                        <br>
-                        <br>
-                        <h4>Returns</h4>
-                        <br>
-                        <p>Unsure of the right size? Can't decide between jackets? <br>
+            </div>
+            <!--Indholdet i dropdownvinduet-->
+            <div id="shipping-content">
+                <button id="closeBtn"><img src="assets/illustrations/close-icon.svg" alt="closing icon"></button>
+                <div id="shipping-content-text">
+                    <h4>Shipping Information</h4>
+                    <br>
+                    <p>We do our best to process and ship orders within 1-2 business days(Monday-Friday, excluding
+                        holidays). <br>
+                        We kindly ask that you choose standard shipping where possible <br> to reduce our environmental
+                        impact. <br>
+                        if you have any questions about your order, you can reach out <br> to our Cosumer Service teams
+                        and we will be happy to help.
+                    </p>
+                    <br>
+                    <p class="underlined-text">More Details</p>
+                    <br>
+                    <br>
+                    <h4>Returns</h4>
+                    <br>
+                    <p>Unsure of the right size? Can't decide between jackets? <br>
                         Our Costumer Service team is here to help - the less unnecessary <br>
                         shipiing, the better. We have no time limit on returns and accept <br>
                         both current and past-seasion products.</p>
-                        <br>
-                        <br>
-                        <p class="underlined-text">How returns work</p>
-                        <p class="underlined-text">Start your return</p>
-                        <p class="underlined-text">Cosumer Service</p>
-                        <br>
-                        <br>
-                        <h4>Subscribe</h4>
-                        <br>
-                        <p>Sign up for product highlights, original stories, <br>activism awareness, event updates and more.</p>
-                        <br>
-                    </div>
-                    <button id="signUp-btn">Sign Me Up</button>
-                </div> 
+                    <br>
+                    <br>
+                    <p class="underlined-text">How returns work</p>
+                    <p class="underlined-text">Start your return</p>
+                    <p class="underlined-text">Cosumer Service</p>
+                    <br>
+                    <br>
+                    <h4>Subscribe</h4>
+                    <br>
+                    <p>Sign up for product highlights, original stories, <br>activism awareness, event updates and more.
+                    </p>
+                    <br>
+                </div>
+                <button id="signUp-btn">Sign Me Up</button>
+            </div>
         </div>
 
         <!-- Bottom header - mobile -->
@@ -78,10 +83,15 @@
             <div class="bot-header-icons">
                 <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
                 <div id="cart-container">
-                    <button id="shoppingbag-button" class="icon-button">
+                    <button id="shoppingbag-button-mobile" class="shoppingbag-button">
                         <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
                     </button>
                     <div id="cart-count">0</div>
+
+                    <!-- Dropdown Shopping Bag -->
+                    <div id="shoppingbag-menu-mobile" class="shopping-bag-content">
+                        <p>Your shopping bag is empty.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,19 +119,19 @@
                         <img src="assets/illustrations/heart-top-header.svg" alt="Heart icon">
                     </button>
                     <div id="cart-container">
-                        <button id="shoppingbag-button" class="icon-button">
+                        <button id="shoppingbag-button-desktop" class="shoppingbag-button">
                             <img src="assets/illustrations/shopping_bag.svg" alt="Shopping bag icon">
                         </button>
                         <div id="cart-count">0</div>
+
+                        <!-- Dropdown Shopping Bag -->
+                        <div id="shoppingbag-menu-desktop" class="shopping-bag-content">
+                            <p>Your shopping bag is empty.</p>
+                        </div>
                     </div>
                     <button id="menu-icon">
                         <img src="assets/illustrations/menu.svg" alt="Menu icon">
                     </button>
-                </div>
-
-                <!-- Dropdown Shopping Bag -->
-                <div id="shoppingbag-menu" class="shopping-bag-content">
-                  <p>Your shopping bag is empty.</p>
                 </div>
             </div>
         </div>
@@ -134,12 +144,13 @@
                 <!-- Product photo section -->
                 <div id="product-photos">
                     <figure>
-                        <img class="product-photo" src="assets/images/pine-needle-green-1.jpg"
-                        alt="Pine Needle Green Fjord Flannel Shirt">
+                        <img class="product-photo" src="assets/images/cascade-pine-needle-green-1.jpg"
+                            alt="Pine Needle Green Fjord Flannel Shirt">
 
                         <div class="product-photo-floating">
                             <div class="product-photo-arrows">
-                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/left-arrow-circle.svg"
+                                    alt="Circle with arrow pointing left">
                                 <img src="assets/illustrations/right-arrow-circle.svg"
                                     alt="Circle with arrow pointing right">
                             </div>
@@ -156,12 +167,13 @@
                     </figure>
 
                     <figure>
-                        <img class="product-photo" src="assets/images/pine-needle-green-2.jpg"
-                        alt="Pine Needle Green Fjord Flannel Shirt">
+                        <img class="product-photo" src="assets/images/cascade-pine-needle-green-2.jpg"
+                            alt="Pine Needle Green Fjord Flannel Shirt">
 
                         <div class="product-photo-floating">
                             <div class="product-photo-arrows">
-                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/left-arrow-circle.svg"
+                                    alt="Circle with arrow pointing left">
                                 <img src="assets/illustrations/right-arrow-circle.svg"
                                     alt="Circle with arrow pointing right">
                             </div>
@@ -178,12 +190,13 @@
                     </figure>
 
                     <figure>
-                        <img class="product-photo" src="assets/images/pine-needle-green-3.jpg"
-                        alt="Pine Needle Green Fjord Flannel Shirt">
+                        <img class="product-photo" src="assets/images/cascade-pine-needle-green-3.jpg"
+                            alt="Pine Needle Green Fjord Flannel Shirt">
 
                         <div class="product-photo-floating">
                             <div class="product-photo-arrows">
-                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/left-arrow-circle.svg"
+                                    alt="Circle with arrow pointing left">
                                 <img src="assets/illustrations/right-arrow-circle.svg"
                                     alt="Circle with arrow pointing right">
                             </div>
@@ -200,12 +213,13 @@
                     </figure>
 
                     <figure>
-                        <img class="product-photo" src="assets/images/pine-needle-green-4.jpg"
-                        alt="Pine Needle Green Fjord Flannel Shirt">
+                        <img class="product-photo" src="assets/images/cascade-pine-needle-green-4.jpg"
+                            alt="Pine Needle Green Fjord Flannel Shirt">
 
                         <div class="product-photo-floating">
                             <div class="product-photo-arrows">
-                                <img src="assets/illustrations/left-arrow-circle.svg" alt="Circle with arrow pointing left">
+                                <img src="assets/illustrations/left-arrow-circle.svg"
+                                    alt="Circle with arrow pointing left">
                                 <img src="assets/illustrations/right-arrow-circle.svg"
                                     alt="Circle with arrow pointing right">
                             </div>
@@ -257,7 +271,7 @@
                         <p id="color-picker-regular-text"> Cascade: Pine Needle Green </p>
                     </div>
                     <div id="color-dots">
-                        <div class="dot active" id="dot-cascane-pine-needle-green"></div>
+                        <div class="dot active" id="dot-cascade-pine-needle-green"></div>
                         <div class="dot" id="dot-shelter-brown"></div>
                         <div class="dot" id="dot-tidepool-blue"></div>
                         <div class="dot" id="dot-oxide-red"></div>
@@ -360,23 +374,23 @@
 
     </footer>
 
-<!-- popup add to bag-->
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <div id="closePopup" class="close">&times;</div>
-        <h2>Added to Bag </h2>
-        <div id="popup-product-info">
-            <img id="popup-product-image" src="" alt="Product Image">
-            <div id="popup-product-text">
-                <h3 id="popup-product-name"></h3>
-                <p id="popup-product-color"></p>
-                <p id="popup-product-size"></p>
-                <p id="popup-product-price"></p>
+    <!-- popup add to bag-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div id="closePopup" class="close">&times;</div>
+            <h2>Added to Bag </h2>
+            <div id="popup-product-info">
+                <img id="popup-product-image" src="" alt="Product Image">
+                <div id="popup-product-text">
+                    <h3 id="popup-product-name"></h3>
+                    <p id="popup-product-color"></p>
+                    <p id="popup-product-size"></p>
+                    <p id="popup-product-price"></p>
+                </div>
             </div>
+            <button id="checkout">Checkout</button>
         </div>
-        <button id="checkout">Checkout</button>
     </div>
-</div>
 
 
 </body>
