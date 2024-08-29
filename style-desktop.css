@@ -153,7 +153,7 @@
     background-color: transparent;
 }
 
-#shoppingbagButton { /* shopping-bag icon */
+#shoppingbag-button { /* shopping-bag icon */
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -168,7 +168,7 @@
     background-color: transparent;
 }
 
-#shoppingbagMenu {
+#shoppingbag-menu {
     display: none;
     position: absolute;
     background-color: #f5f5f5;
@@ -179,7 +179,7 @@
 }
 
 /* Changed opacity of icon when hovering */
-#shoppingbagButton:hover {
+#shoppingbag-button:hover {
     opacity: 0.5;
 }
 
