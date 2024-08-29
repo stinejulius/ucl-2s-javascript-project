@@ -27,15 +27,15 @@ setInterval(SwitchTextAndIMG, 4000);
 /*Event tilføjet på shippingknap, så der sker noget ved et klik */
 document.getElementById('shippingBtn').addEventListener('click', function() {
     /*Viser hvilket indhold der skal skjules, når menuen ikke er foldet ud */
-    var dropdown = document.getElementById('shipping-content');
-    var icon = document.getElementById('svg-icon');
+    let dropdown = document.getElementById('shipping-content');
+    let icon = document.getElementById('svg-icon');
 
     dropdown.classList.toggle('show');
 });
 
 document.getElementById('closeBtn').addEventListener('click', function() {
-    var dropdown = document.getElementById('shipping-content')
-    var icon = document.getElementById('svg-icon');
+    let dropdown = document.getElementById('shipping-content')
+    let icon = document.getElementById('svg-icon');
 
     dropdown.classList.remove ('show');
 });
@@ -43,8 +43,8 @@ document.getElementById('closeBtn').addEventListener('click', function() {
 /*Betyder at du kan klikke enten udenfor vinduet eller på knappen for at lukke */
 window.onclick = function(event) {
     if (!event.target.closest('#fade-container')) {
-        var dropdown = document.getElementById('shipping-content');
-        var icon = document.getElementById('closeBtn');
+        let dropdown = document.getElementById('shipping-content');
+        let icon = document.getElementById('closeBtn');
     
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
