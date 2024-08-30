@@ -2,6 +2,10 @@
 
 alert ("This website is made for educational purposes");
 
+ // Check if JavaScript is working in console
+ console.log("The site is working");
+ 
+
 /**
  * GLOBAL VARIABLES
  */
